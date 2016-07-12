@@ -1,21 +1,28 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DBEBA49FFE6D354A7908EF1A61096B0BBADFC292",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7FD2755A6CE16E9A43A7F3F44B483FF9F1D4E5EA",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7FD2755A6CE16E9A43A7F3F44B483FF9F1D4E5EA" : 0,
     "DBEBA49FFE6D354A7908EF1A61096B0BBADFC292" : 0,
     "9F7CC8580B708AB49ED1184EBF6BF00FC103F59D" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A44A883B-2995-4A19-B422-EDA23ABFC3A8",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "DBEBA49FFE6D354A7908EF1A61096B0BBADFC292" : "Objective-C\/",
-    "9F7CC8580B708AB49ED1184EBF6BF00FC103F59D" : ""
+    "7FD2755A6CE16E9A43A7F3F44B483FF9F1D4E5EA" : "BillSplitter\/",
+    "DBEBA49FFE6D354A7908EF1A61096B0BBADFC292" : "",
+    "9F7CC8580B708AB49ED1184EBF6BF00FC103F59D" : ".."
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "BillSplitter",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BillSplitter\/BillSplitter.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BillSplitter.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sleepyUdon\/BillSplitter.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7FD2755A6CE16E9A43A7F3F44B483FF9F1D4E5EA"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/github.com\/sleepyUdon\/LighthouseLab",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",

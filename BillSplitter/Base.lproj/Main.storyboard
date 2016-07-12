@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter bill amount" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mMc-Rr-53t">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mMc-Rr-53t">
                                 <rect key="frame" x="20" y="28" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -26,31 +26,39 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="2" maxValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="v9r-dx-k2O">
                                 <rect key="frame" x="18" y="104" width="564" height="31"/>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YK-Yl-8w7">
-                                <rect key="frame" x="20" y="177" width="560" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="calculateSplitAmount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rN1-zS-E89"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaJ-4P-Xhm">
-                                <rect key="frame" x="20" y="262" width="560" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaJ-4P-Xhm">
+                                <rect key="frame" x="20" y="332" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W45-3n-pbQ">
+                                <rect key="frame" x="279" y="195" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YK-Yl-8w7">
+                                <rect key="frame" x="20" y="247" width="560" height="30"/>
+                                <state key="normal" title="Calculate Tip"/>
+                                <connections>
+                                    <action selector="calculateSplitAmount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rN1-zS-E89"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="W45-3n-pbQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FKo-8Z-1Mb"/>
                             <constraint firstItem="mMc-Rr-53t" firstAttribute="trailing" secondItem="v9r-dx-k2O" secondAttribute="trailing" id="IX5-eJ-Q1m"/>
                             <constraint firstItem="mMc-Rr-53t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KLc-cR-13I"/>
                             <constraint firstItem="3YK-Yl-8w7" firstAttribute="leading" secondItem="aaJ-4P-Xhm" secondAttribute="leading" id="LyD-FO-f8u"/>
+                            <constraint firstItem="3YK-Yl-8w7" firstAttribute="top" secondItem="W45-3n-pbQ" secondAttribute="bottom" constant="31" id="Nby-bZ-9HD"/>
                             <constraint firstItem="v9r-dx-k2O" firstAttribute="trailing" secondItem="3YK-Yl-8w7" secondAttribute="trailing" id="RcB-Kx-Cd1"/>
-                            <constraint firstItem="3YK-Yl-8w7" firstAttribute="top" secondItem="v9r-dx-k2O" secondAttribute="bottom" constant="43" id="THs-0f-thf"/>
                             <constraint firstItem="mMc-Rr-53t" firstAttribute="leading" secondItem="v9r-dx-k2O" secondAttribute="leading" id="Unl-2H-Sk3"/>
                             <constraint firstItem="mMc-Rr-53t" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bXp-zf-CEM"/>
                             <constraint firstItem="3YK-Yl-8w7" firstAttribute="trailing" secondItem="aaJ-4P-Xhm" secondAttribute="trailing" id="cmP-LB-qK9"/>
                             <constraint firstItem="v9r-dx-k2O" firstAttribute="top" secondItem="mMc-Rr-53t" secondAttribute="bottom" constant="46" id="dwi-ef-meE"/>
+                            <constraint firstItem="W45-3n-pbQ" firstAttribute="top" secondItem="v9r-dx-k2O" secondAttribute="bottom" constant="61" id="nyZ-pw-VGN"/>
                             <constraint firstItem="v9r-dx-k2O" firstAttribute="leading" secondItem="3YK-Yl-8w7" secondAttribute="leading" id="pRY-Ge-0mL"/>
                             <constraint firstItem="aaJ-4P-Xhm" firstAttribute="top" secondItem="3YK-Yl-8w7" secondAttribute="bottom" constant="55" id="u9q-av-2fC"/>
                             <constraint firstItem="mMc-Rr-53t" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="yJw-CT-NjD"/>
@@ -58,6 +66,7 @@
                     </view>
                     <connections>
                         <outlet property="amountToPayLabel" destination="aaJ-4P-Xhm" id="K9i-z4-QDr"/>
+                        <outlet property="numberOfPeople" destination="W45-3n-pbQ" id="se8-yy-wx1"/>
                         <outlet property="numberOfPeopleSlider" destination="v9r-dx-k2O" id="v73-f7-e03"/>
                         <outlet property="totalBillAmountTextField" destination="mMc-Rr-53t" id="3zU-SI-Arh"/>
                     </connections>
